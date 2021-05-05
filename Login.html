@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: rgb(6, 6, 66);
+            width:100%;
+            height:100%;
+        }
+        .box{
+            text-align: center;
+           background-color: white;
+           
+           height: 400px;
+           width: 300px;
+           position: absolute;
+           padding: 30px, 20px;
+           top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+        }
+        .idForm{
+            border-bottom: 2px black;
+            margin: 30px;
+        padding: 10px 10px;
+        }
+        .passForm{
+            border-bottom: 2px black;
+            margin: 30px;
+        padding: 10px 10px;
+        }
+        .id{
+            width: 100%;
+            color: #636e72;
+            background: none;
+            height:25px;
+        }
+        .pw{
+            width: 100%;
+            color: #636e72;
+            background: none;
+            height:25px;
+        }
+        .btn{
+            position: relative;
+            left: 40%; /*포지션 릴레티브 %로*/
+            transform: translateX(-50%);
+            margin-bottom: 40px;
+            width:80%;
+            height:40px;
+            background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec);
+            color:white;
+            font-weight: bold;
+            border:none;
+            cursor:pointer;/*커서가 가르키는 모양*/
+  
+ 
+        }
+    </style>
+    <title>LOGIN</title>
+</head>
+<body>
+    <form>
+        <div class="box">
+    <h2>Login</h2>
+    <div class="idForm">
+                <input type="text" class="id" placeholder="ID">
+    </div>
+    <div class="passForm">  
+                <input type="password" class="pw" placeholder="PW">               
+        </div>
+        <button type="submit" class="btn">LOG IN</button>
+    </div>
+</form>
+</body>
+</html>
